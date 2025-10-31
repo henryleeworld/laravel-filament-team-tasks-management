@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Filament\Auth\Events\Registered;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -13,8 +14,14 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::factory()->superAdmin()->create([
-            'name' => __('Administrator'),
+            'name' => __('Super administrator'),
             'email' => 'admin@admin.com',
         ]);
+
+        $user = User::factory()->create([
+            'name' => __('Team administrator'),
+            'email' => 'team@admin.com',
+        ]);
+        event(new Registered($user));
     }
 }

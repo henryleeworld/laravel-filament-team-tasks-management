@@ -52,4 +52,21 @@ return [
 
     ],
 
+    'avatar' => [
+        'alt' => 'Awatar :name',
+    ],
+
+    'logo' => [
+        'alt' => 'Logo :name',
+    ],
+
+    'tenant_menu' => [
+
+        'search_field' => [
+            'label' => 'Wyszukiwanie najemcy',
+            'placeholder' => 'Szukaj',
+        ],
+
+    ],
+
 ];

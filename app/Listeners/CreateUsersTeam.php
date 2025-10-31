@@ -4,20 +4,10 @@ namespace App\Listeners;
 
 use App\Models\Role;
 use App\Models\User;
-use Filament\Events\Auth\Registered;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Queue\InteractsWithQueue;
+use Filament\Auth\Events\Registered;
 
 class CreateUsersTeam
 {
-    public function __construct()
-    {
-        //
-    }
-
-    /**
-     * Handle the event.
-     */
     public function handle(Registered $event): void
     {
         $user = $event->getUser();

@@ -1,4 +1,4 @@
-# Laravel 11 Filament 團隊任務管理
+# Laravel 12 Filament 團隊任務管理
 
 Filament 團隊任務管理採用快速建立簡捷的 TALL（Tailwind CSS、Alpine.js、Laravel 和 Livewire）堆疊應用程式的工具組，在一處位置可視化您的所有團隊任務，確保無一遺漏，讓您與團隊成員保持同步，不必再等待另行安排的會議、交流了。
 
@@ -21,24 +21,15 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
-- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
-```sh
-$ npm install
-```
-- 執行正式環境版本化資源管道並編譯。
-```sh
-$ npm run build
-```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/admin/register` 來進行註冊。
-- 完成註冊後，可以經由 `/admin/login` 來進行登入。
-- 登入後可以經由 `/admin/tasks` 來進行任務管理。
+- 或可以經由 `/admin/login` 來進行登入，以超級管理員身分使用預設的電子郵件和密碼分別為 admin@admin.com 和 password ；以團隊管理員身分使用預設的電子郵件和密碼分別為 team@admin.com 和 password 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/8R3hLRc.png)
+![](https://i.imgur.com/spldVPU.png)
 > 任務代表可採取行動的步驟或待辦事項，以明確人、事、時，但它們也可以代表構想和參考項目
 
-![](https://i.imgur.com/g3fgutD.png)
+![](https://i.imgur.com/b9kQqag.png)
 > 任務清單可化身重要的商務工具，以確保團隊恪守期限
